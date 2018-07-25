@@ -21,5 +21,21 @@ public class Cliente extends Pessoa {
 	public void setCpf(String cpf) {
 		this.cpf = cpf;
 	}
+
+	@Override
+	public void setIdade(int idade) {
+		if (idade > 0) {
+			super.idade = idade;
+		}
+	}
+	
+	@Override
+	public boolean equals(Object obj) {
+		Cliente cliente = (Cliente) obj;
+		if (cliente.getNome().equals(super.getNome())) {
+			return true;
+		}
+		return false;
+	}
 	
 }

@@ -1,9 +1,9 @@
 package exemplo1;
 
-public class Pessoa {
+public abstract class Pessoa {
 
 	private String nome;
-	private int idade;
+	protected int idade;
 	private float altura;
 	private float peso;
 	
@@ -34,9 +34,7 @@ public class Pessoa {
 		return idade;
 	}
 	
-	public void setIdade(int idade) {
-		this.idade = idade;
-	}
+	public abstract void setIdade(int idade);
 	
 	public float getAltura() {
 		return altura;
