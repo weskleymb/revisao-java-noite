@@ -8,7 +8,7 @@ public class TestaCliente {
 		duone.setSalario(8000f);
 		duone.setCpf("123123123-12");
 		
-		Cliente jose = new Cliente("Duone");
+		Cliente jose = new Cliente("Jose");
 		jose.setSalario(5000f);
 		jose.setCpf("123123123-12");
 		
@@ -16,7 +16,8 @@ public class TestaCliente {
 			System.out.println("Iguais");
 		} else {
 			System.out.println("Diferentes");
-		}
+		}		
+		
 	}
 	
 }

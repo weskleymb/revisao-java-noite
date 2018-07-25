@@ -31,8 +31,8 @@ public class Cliente extends Pessoa {
 	
 	@Override
 	public boolean equals(Object obj) {
-		Cliente cliente = (Cliente) obj;
-		if (cliente.getNome().equals(super.getNome())) {
+		Cliente cliente1 = (Cliente) obj;
+		if (cliente1.cpf.equals(this.cpf)) {
 			return true;
 		}
 		return false;
